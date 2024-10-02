@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schere Stein Papier</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+  <!--Startseite-->
+  <section id="start-page-section">
+    <h1>Schere Stein Papier</h1>
+    <button id="change-mode-button">Wechsle zu Server</button>
+    <div id="loader" class="hidden"></div>
+    <h2>Rangliste</h2>
+    <ul class="ranking-ul">
+    </ul>
+    <hr>
+    <p>Starten Sie ein neues Spiel</p>
+    <form >
+      <label for="player-name-input">Name</label>
+      <input id="player-name-input"/>
+      <br>
+      <button id="start-button">Spiel Starten</button>
+    </form>
+  </section>
+
+  <!--Spielseite-->
+  <section id="play-page-section" class="hidden">
+    <h1>Schere Stein Papier</h1>
+    <p id="greeting"></p>
+    <ul id="hands-ul">
+      <li>Schere</li>
+      <li>Stein</li>
+      <li>Papier</li>
+      <li>Brunnen</li>
+      <li>Streichholz</li>
+    </ul>
+    <p id="timer">VS</p>
+    <p id="computer-choice"></p>
+    <button id="back-button">Zurück zum Ranking</button>
+    <hr>
+    <h2>History</h2>
+    <table id="history-table">
+      <tr>
+        <th>Resultat</th>
+        <th>Spieler</th>
+        <th>Gegner</th>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
